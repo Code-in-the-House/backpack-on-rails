@@ -1,8 +1,8 @@
 require 'open-uri'
 class NightController < ApplicationController
   def index
-    decathlon = open('http://www.decathlon.com.tr/C-529835-sirt-cantasi-ve-aksesuari')
+    decathlon = open('http://www.decathlon.com.tr/C-529835-s-rt-cantalar-ve-aksesuarlar/T-251685_293820D')
     @doc = Nokogiri::HTML(decathlon)
-    @dec = @doc.css('ul li div.product_bloc_orga_02').first(10)
+    @dec = @doc.css('ul.product_list li.product_normal').first(24)
   end
 end

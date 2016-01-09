@@ -15,26 +15,29 @@
  */
  .body{
    margin: 0 auto;
-   width: 1200px;
+   width: 1280px;
  }
 .product{
-  background-color: #8bc34a;
   padding: 16px;
   margin: 12px;
   border-radius: 3px;
-  box-shadow: 1px 1px 8px #bdc3c7;
+  box-shadow: 1px 1px 5px #bdc3c7;
+}
+.product-brand{
+  font-size: 14px;
+  color:#d4e157;
+}
+.product-name{
+  font-size: 14px;
+  color:#d4e157;
 }
 .product-price{
   font-size: 16px;
   color: #ffeb3b;
-  margin-left: 6px;
   background-color: #afb42b;
   border-radius: 5px;
-  padding: 5px;
   display: inline-block;
+  padding: 5px;
 }
-.product-name{
-  font-size: 15px;
-  padding: 5px 5px 5px 5px;
-  color:#d4e157;
+.product-image{
 }

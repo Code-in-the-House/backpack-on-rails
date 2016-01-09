@@ -2,11 +2,17 @@
 <% @dec.each do |dec| %>
   <div class="col s4 m4 l4">
     <div class="product">
+      <div class="product-brand">
+        <b><%= dec.css('div.product_bloc_orga_02 a.product_brand').text %></b>
+      </div>
       <div class="product-name">
-        <%= dec.css('a.product_name').text %>
+        <%= dec.css('div.product_bloc_orga_02 a.product_name').text %>
       </div>
       <div class="product-price">
-        <%= dec.css('div.product_price span.actual_price').text %>
+        <%= dec.css('div.product_bloc_orga_02 div.product_price span.actual_price').text %>
+      </div>
+      <div class="product-image">
+        <%= image_tag("http://www.decathlon.com.tr#{(dec.css('div.product_bloc_orga_01 img').attr('data-original'))}") %>
       </div>
     </div>
   </div>
