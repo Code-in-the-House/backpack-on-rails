@@ -1,0 +1,14 @@
+<div class="row">
+<% @dec.each do |dec| %>
+  <div class="col s4 m4 l4">
+    <div class="product">
+      <div class="product-name">
+        <%= dec.css('a.product_name').text %>
+      </div>
+      <div class="product-price">
+        <%= dec.css('div.product_price span.actual_price').text %>
+      </div>
+    </div>
+  </div>
+<% end %>
+</div>
