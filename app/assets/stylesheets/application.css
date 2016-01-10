@@ -1,7 +1,10 @@
- *= require_self
+/*
+*= require_self
+*/
 
- .body{
+ body{
    font-family: 'Montserrat', sans-serif !important;
+   background-color: rgba(175, 180, 43, 0.2);
  }
  .welcome{
    text-align: center;
@@ -11,6 +14,7 @@
   padding: 16px;
   margin-top: 64px;
   border-radius: 3px;
+  background-color: #fff;
   box-shadow: 1px 1px 5px #bdc3c7;
 }
 .product-brand{
@@ -37,13 +41,17 @@
 }
 #hepsiburada{
   background-color: #F28B00;
+  box-shadow: 1px 1px 5px #bdc3c7;
+
 }
 #decathlon{
   background-color: #165EB9;
+  box-shadow: 1px 1px 5px #bdc3c7;
+
 }
 .link{
   text-align: center;
 }
 .home{
-  background-color: rgba(175, 180, 43, 0.5);
+  background-color: rgba(175, 180, 43, 0.7);
 }
