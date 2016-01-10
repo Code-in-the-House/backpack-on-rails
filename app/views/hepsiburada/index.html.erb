@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="top" id="hepsiburada">hepsiburada</div>
+    <% @hep.each do |hep| %>
+      <div class="col s12 m6 l4">
+        <div class="product">
+          <div class="product-name">
+            <b><%= hep.css('div.product-detail h3').attr('title') %></b>
+          </div>
+          <div class="product-price">
+            <%= hep.css('div.product-detail span.product-price').text %>
+          </div>
+          <%= image_tag(hep.css('figure.product-image-wrapper img').attr('src')) %>
+        </div>
+      </div>
+    <% end %>
+</div>

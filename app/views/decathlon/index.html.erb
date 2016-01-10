@@ -1,6 +1,7 @@
 <div class="row">
+  <div class="top" id="decathlon">DECATHLON</div>
 <% @dec.each do |dec| %>
-  <div class="col s4 m4 l4">
+  <div class="col s12 m6 l4">
     <div class="product">
       <div class="product-brand">
         <b><%= dec.css('div.product_bloc_orga_02 a.product_brand').text %></b>
@@ -11,9 +12,7 @@
       <div class="product-price">
         <%= dec.css('div.product_bloc_orga_02 div.product_price span.actual_price').text %>
       </div>
-      <div class="product-image">
         <%= image_tag("http://www.decathlon.com.tr#{(dec.css('div.product_bloc_orga_01 img').attr('data-original'))}") %>
-      </div>
     </div>
   </div>
 <% end %>

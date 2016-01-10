@@ -1,0 +1,2 @@
+module DageviHelper
+end
