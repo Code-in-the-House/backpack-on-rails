@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="top" id="adrenalinoutdoor">ADRENALİN OUTDOOR</div>
+<% @adr.each do |adr| %>
+  <div class="col s12 m6 l4">
+    <div class="product">
+      <div class="product-name">
+        <%= adr.css('div.listeleme_bilgi div.listeleme_urun_adi a').attr('title') %>
+      </div>
+      <div class="product-price">
+        <%= adr.css('div.listeleme_fiyat span#pric').text.first(6) %>
+      </div>
+        <%= image_tag("http://www.adrenalinoutdoor.com/#{(adr.css('div.listeleme_resim img').attr('data-original'))}") %>
+    </div>
+  </div>
+<% end %>
+</div>

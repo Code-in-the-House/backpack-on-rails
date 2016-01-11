@@ -34,20 +34,23 @@
   padding: 5px;
 }
 .top{
+  margin: 0 auto;
   text-align: center;
   font-size: 15px;
+  box-shadow: 1px 1px 3px #bdc3c7;
   padding: 3px;
   color: #fff;
+  display: block;
+  position: fixed;
 }
 #hepsiburada{
   background-color: #F28B00;
-  box-shadow: 1px 1px 5px #bdc3c7;
-
 }
 #decathlon{
   background-color: #165EB9;
-  box-shadow: 1px 1px 5px #bdc3c7;
-
+}
+#adrenalinoutdoor{
+  background-color: #000;
 }
 .link{
   text-align: center;
